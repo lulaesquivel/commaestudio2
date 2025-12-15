@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Lago | Comma Estudio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Overlay para la transición de página -->
+    <div id="page-transition-overlay"></div>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.comma.svg" alt="Logo de Comma Estudio" class="logo">
+            </a>
+            <ul>
+                <li class="dropdown">
+                    <a href="servicios.html" class="dropbtn">Servicios</a>
+                    <div class="dropdown-content">
+                        <a href="servicios-comercial.html">Comercial</a>
+                        <a href="servicios-residencial.html">Residencial</a>
+                    </div>
+                </li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="about.html">Nosotras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <main class="detalle-proyecto">
+        <section class="proyecto-hero">
+            <img src="https://placehold.co/1920x800?text=Foto+Principal+Wide" alt="Casa Lago Portada">
+            <div class="proyecto-titulo-overlay">
+                <h1>Casa Lago</h1>
+                <p>Reforma Integral - Buenos Aires</p>
+            </div>
+        </section>
+
+        <div class="contenido-layout">
+            <aside class="ficha-tecnica">
+                <h3>Ficha Técnica</h3>
+                <ul>
+                    <li><strong>Año:</strong> 2024</li>
+                    <li><strong>Superficie:</strong> 120m²</li>
+                    <li><strong>Ubicación:</strong> Tigre, Bs As</li>
+                    <li><strong>Equipo:</strong> Manuela Verdún, Eugenia Esquivel</li>
+                    <li><strong>Fotografía:</strong> Nombre Fotógrafo</li>
+                </ul>
+            </aside>
+
+            <div class="memoria-proyecto">
+                <p class="lead">Aquí va el texto poético y descriptivo del proyecto. "Buscamos potenciar la luz natural..."</p>
+                <p>Más detalles técnicos sobre los materiales y la ejecución...</p>
+
+                <div class="galeria-vertical">
+                    <img src="https://placehold.co/800x600" alt="Detalle 1">
+                    <img src="https://placehold.co/800x600" alt="Detalle 2">
+                    
+                    <!-- ========= INICIO: Componente Antes/Después ========= -->
+                    <div class="before-after-slider">
+                        <!-- Contenedor de la imagen "Después" (la que se recorta) -->
+                        <div class="before-after-slider__after-wrapper">
+                            <img src="https://placehold.co/1200x800/FDFBF5/333333?text=Después" alt="Vista después de la reforma">
+                        </div>
+                        <!-- Imagen "Antes" (la que está de fondo) -->
+                        <img src="https://placehold.co/1200x800/cccccc/333333?text=Antes" alt="Vista antes de la reforma" class="before-after-slider__before-image">
+                        <!-- Manija para arrastrar -->
+                        <div class="before-after-slider__handle">
+                            <div class="before-after-slider__handle-line"></div>
+                            <div class="before-after-slider__handle-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                            <div class="before-after-slider__handle-line"></div>
+                        </div>
+                    </div>
+
+                    <img src="https://placehold.co/800x600" alt="Plano">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>© 2025 Comma Estudio. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="about.html">Nosotras</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="https://instagram.com/comma.estudio" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cursor-blob"></div>
+    <script src="main.js"></script>
+
+    </body>
+</html>

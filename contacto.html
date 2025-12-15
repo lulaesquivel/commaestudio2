@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Comma Estudio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.comma.svg" alt="Comma Logo" class="logo"></a>
+            <ul>
+                <li class="dropdown">
+                    <a href="servicios.html" class="dropbtn">Servicios</a>
+                    <div class="dropdown-content">
+                        <a href="servicios-comercial.html">Comercial</a>
+                        <a href="servicios-residencial.html">Residencial</a>
+                    </div>
+                </li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="menu-hamburguesa"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <main class="pagina-contacto">
+        <section class="contacto-intro">
+            <h1>Hablemos de tu proyecto</h1>
+            <p>Ya sea una reforma residencial o la expansión de tu marca, queremos escuchar tu idea.</p>
+        </section>
+
+        <section class="contacto-grid">
+            <div class="form-wrapper">
+                <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST" class="formulario-minimal">
+                    
+                    <div class="input-group">
+                        <input type="text" name="nombre" id="nombre" required placeholder=" ">
+                        <label for="nombre">Nombre</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="email" id="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" name="asunto" id="asunto" placeholder=" ">
+                        <label for="asunto">Asunto (Ej: Reforma Casa, Local Comercial)</label>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="mensaje" id="mensaje" rows="4" required placeholder=" "></textarea>
+                        <label for="mensaje">Contanos brevemente tu idea...</label>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">ENVIAR PROPUESTA</button>
+                </form>
+            </div>
+
+            <div class="contacto-datos">
+                <div class="dato-item">
+                    <h3>Ubicación</h3>
+                    <p>Buenos Aires, Argentina</p>
+                    <p class="dato-nota">(Disponible para proyectos en todo el país)</p>
+                </div>
+                <div class="dato-item">
+                    <h3>Escribinos</h3>
+                    <a href="mailto:hola@commaestudio.com">hola@commaestudio.com</a>
+                </div>
+                <div class="dato-item">
+                    <h3>Seguinos</h3>
+                    <a href="https://instagram.com/comma.estudio" target="_blank">@comma.estudio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="cursor-blob"></div>
+    <script src="main.js"></script>
+</body>
+</html>

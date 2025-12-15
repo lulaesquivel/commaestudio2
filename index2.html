@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comma | Estudio de Arquitectura en Buenos Aires</title>
+    <meta name="description" content="Estudio de arquitectura especializado en reformas residenciales llave en mano y diseño de locales comerciales y franquicias. Estrategia + Diseño + Obra.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Ajustes "Cancheros" específicos para la Home */
+        .section-tag {
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            opacity: 0.5;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .hero-bajada {
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 2rem auto 0 auto;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.comma.svg" alt="Logo de Comma Estudio" class="logo">
+            </a>
+            <ul>
+                <li class="dropdown">
+                    <a href="servicios.html" class="dropbtn">Servicios</a>
+                    <div class="dropdown-content">
+                        <a href="servicios-comercial.html">Comercial</a>
+                        <a href="servicios-residencial.html">Residencial</a>
+                    </div>
+                </li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="about.html">Nosotras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <span class="hero-linea">ARQUITECTURA</span>
+                <span class="hero-linea">QUE CONECTA</span>
+                <p class="hero-bajada">Diseño estratégico y gestión de obra para viviendas y marcas que buscan identidad.</p>
+                
+                <img src="img/blob-pink.png" alt="" class="hero-decoracion" id="blob-pink" data-speed="2">
+                <img src="img/circle-black.png" alt="" class="hero-decoracion" id="circle-black" data-speed="-5">
+                <img src="img/petal-blue.png" alt="" class="hero-decoracion" id="arc-rainbow" data-speed="5">
+                <img src="img/ring-pink.png" alt="" class="hero-decoracion" id="ring-pink" data-speed="-2">
+                <img src="img/cone-blue.png" alt="" class="hero-decoracion" id="cone-blue" data-speed="3">
+                <img src="img/orb-neutral.png" alt="" class="hero-decoracion" id="orb-neutral" data-speed="-4">
+                <img src="img/blob-orange.png" alt="" class="hero-decoracion" id="blob-orange" data-speed="6">
+            </div>
+        </section>
+
+        <section style="padding: 4rem 2rem; text-align: center; max-width: 800px; margin: 0 auto;" class="reveal">
+            <p style="font-size: 1.5rem; line-height: 1.6; font-weight: 300;">
+                "Las comas no solo dividen, sino que también conectan. Cada proyecto es una pausa necesaria para pensar cómo queremos vivir."
+            </p>
+        </section>
+
+        <section id="home-servicios" class="reveal" style="padding: 4rem 2rem;">
+            <div class="servicios-container" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; max-width: 1100px; margin: 0 auto;">
+                
+                <div class="servicio-item" style="border-top: 1px solid #333; padding-top: 1.5rem; text-align: left;">
+                    <span class="section-tag">EMPRESAS</span>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem; font-weight: 400;">Comercial</h3>
+                    <p style="margin-bottom: 1.5rem;">Diseñamos locales que venden y manuales para franquicias que buscan expandirse. Arquitectura orientada a la experiencia de usuario.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem; font-size: 0.9rem; opacity: 0.8; line-height: 1.8;">
+                        <li>+ Gastronomía & Retail</li>
+                        <li>+ Manuales de Marca</li>
+                        <li>+ Layout Operativo</li>
+                    </ul>
+                    <a href="servicios-comercial.html" class="btn-cta" style="margin: 0; display: inline-block; border-bottom: 1px solid #333; padding-bottom: 2px; width: auto;">Potenciar mi negocio →</a>
+                </div>
+
+                <div class="servicio-item" style="border-top: 1px solid #333; padding-top: 1.5rem; text-align: left;">
+                    <span class="section-tag">VIVIENDA</span>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem; font-weight: 400;">Residencial</h3>
+                    <p style="margin-bottom: 1.5rem;">Reformas integrales y obra nueva llave en mano. Gestionamos todo el proceso para que vos solo disfrutes el resultado.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem; font-size: 0.9rem; opacity: 0.8; line-height: 1.8;">
+                        <li>+ Proyecto y Dirección</li>
+                        <li>+ Gestión de Gremios</li>
+                        <li>+ Interiorismo Integrado</li>
+                    </ul>
+                    <a href="servicios-residencial.html" class="btn-cta" style="margin: 0; display: inline-block; border-bottom: 1px solid #333; padding-bottom: 2px; width: auto;">Diseñar mi casa →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="home-proyectos" class="reveal">
+            <span class="section-tag">PORTFOLIO</span>
+            <h2 style="margin-bottom: 3rem;">Obras Recientes</h2>
+            
+            <div class="proyectos-galeria">
+                <a href="proyecto-detalle.html" class="proyecto-item">
+                    <img src="https://placehold.co/800x600?text=Casa+Lago" alt="Casa Lago" class="img-base">
+                    <div class="proyecto-info">
+                        <h3>Casa Lago</h3>
+                        <p>Reforma Integral</p>
+                    </div>
+                </a>
+                <a href="proyecto-detalle.html" class="proyecto-item">
+                    <img src="https://placehold.co/800x600/333/FFF?text=Café+Martínez" alt="Café Martínez" class="img-base">
+                    <div class="proyecto-info">
+                        <h3>Café Martínez</h3>
+                        <p>Franquicia & Branding</p>
+                    </div>
+                </a>
+                <a href="proyecto-detalle.html" class="proyecto-item">
+                    <img src="https://placehold.co/800x600?text=Depto+Palermo" alt="Depto Palermo" class="img-base">
+                    <div class="proyecto-info">
+                        <h3>Depto Palermo</h3>
+                        <p>Interiorismo</p>
+                    </div>
+                </a>
+                <a href="proyecto-detalle.html" class="proyecto-item">
+                    <img src="https://placehold.co/800x600/e0e0e0/333?text=Oficinas+Tech" alt="Oficinas Tech" class="img-base">
+                    <div class="proyecto-info">
+                        <h3>Oficinas Tech</h3>
+                        <p>Corporativo</p>
+                    </div>
+                </a>
+            </div>
+            <br><br>
+            <a href="proyectos.html" class="btn-cta" style="border-bottom: 1px solid #333; display: inline-block; padding-bottom: 5px;">Ver todos los proyectos</a>
+        </section>
+
+        <section id="home-about" class="reveal" style="background-color: #f9f9f9;">
+            <div class="about-container">
+                <div class="about-texto">
+                    <span class="section-tag">EL ESTUDIO</span>
+                    <h2 style="font-weight: 300; font-size: 2.5rem; margin-bottom: 2rem;">Estrategia y Sensibilidad</h2>
+                    <p>Somos un estudio basado en Buenos Aires. Nos interesa desarrollar en los proyectos estrategia de marca y experiencia del usuario, reconociendo la importancia de la arquitectura en la creación de identidad.</p>
+                    <a href="about.html" class="btn-cta" style="margin-top: 1rem; display: inline-block;">Conocé al equipo →</a>
+                </div>
+                <div class="about-imagen">
+                    <img src="https://placehold.co/600x700/FDFBF5/333333?text=Nosotras" alt="Sobre Comma Estudio">
+                </div>
+            </div>
+        </section>
+
+        <section id="home-contacto" class="reveal">
+            <h2 style="font-weight: 300;">Hablemos de tu idea</h2>
+            <p>Ya sea una reforma o una marca nueva, queremos escuchar tu proyecto.</p>
+            
+            <div class="contacto-links" style="display: flex; gap: 2rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap;">
+                <a href="mailto:hola@commaestudio.com" style="font-size: 1.2rem; text-decoration: none; color: #333; border: 1px solid #333; padding: 1rem 2rem; border-radius: 50px;">hola@commaestudio.com</a>
+                <a href="https://wa.me/TUNUMERO" class="btn-cta" style="font-size: 1.2rem; background: #333; color: white; padding: 1rem 2rem; border-radius: 50px; margin-top: 0; border: 1px solid #333;">WhatsApp Directo</a>
+            </div>
+            <p class="contacto-ubicacion">Buenos Aires, Argentina</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>© 2025 Comma Estudio. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="about.html">Nosotras</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="https://instagram.com/comma.estudio" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cursor-blob"></div>
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -281,12 +281,6 @@ nav ul.menu-abierto a {
     font-weight: 500;
 }
 
-@media (min-width: 768px) {
-    .servicios-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 /* --- Sección de Proyectos --- */
 #home-proyectos {
     padding: 5rem 2rem;
@@ -408,13 +402,6 @@ nav ul.menu-abierto a {
     line-height: 1.6;
 }
 
-@media (min-width: 768px) {
-    .about-container {
-        grid-template-columns: 1fr 1fr;
-        /* 2 columnas en desktop */
-    }
-}
-
 /* --- Sección Contacto --- */
 #home-contacto {
     padding: 3rem 1rem; /* Redujimos de 6rem a 3rem */
@@ -470,13 +457,6 @@ footer {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .footer-container {
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
 .footer-logo {
     height: 30px;
     margin-bottom: 1rem;
@@ -520,70 +500,6 @@ footer {
     opacity: 0.7;
 }
 
-/* --- Media Query General para Responsividad --- */
-@media (max-width: 768px) {
-
-    /* Hero */
-    .hero-linea {
-        font-size: clamp(2rem, 10vw, 4.5rem);
-    }
-
-    #blob-pink,
-    #arc-rainbow,
-    #ring-pink,
-    #cone-blue,
-    #petal-blue,
-    #circle-black,
-    #blob-orange {
-        display: none;
-    }
-
-    #orb-neutral {
-        width: 90vw;
-        /* Hacelo grande, 90% del ancho de la pantalla */
-        height: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* Centrado perfecto */
-        opacity: 0.7;
-        /* Hacelo un poco sutil */
-        z-index: 1;
-        /* Detrás del texto */
-        /* Resetear valores de desktop que no aplican */
-        bottom: auto;
-    }
-
-    /* Servicios */
-    #home-servicios .servicios-container {
-        grid-template-columns: 1fr;
-    }
-
-    /* Proyectos */
-    .proyectos-galeria {
-        grid-template-columns: 1fr;
-    }
-
-    /* About - ya era responsivo, pero lo incluimos por claridad */
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
-    /* Contacto */
-    #home-contacto .servicios-container {
-        grid-template-columns: 1fr;
-    }
-
-    /* Navegación */
-    nav ul {
-        display: none;
-    }
-
-    .menu-hamburguesa {
-        display: block;
-    }
-}
-
 /* --- Animación del botón hamburguesa a X --- */
 .menu-hamburguesa.activo span:nth-child(2) {
     opacity: 0;
@@ -615,14 +531,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    .hub-opciones {
-        grid-template-columns: 1fr 1fr;
-        height: 60vh;
-        /* Altura fija en desktop */
-    }
 }
 
 .hub-card {
@@ -762,20 +670,6 @@ footer {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .contenido-layout {
-        grid-template-columns: 1fr 3fr;
-        /* Ficha pequeña, contenido ancho */
-    }
-
-    .ficha-tecnica {
-        position: sticky;
-        top: 100px;
-        /* Se queda fija al scrollear */
-        height: fit-content;
-    }
-}
-
 .galeria-vertical img {
     width: 100%;
     margin-bottom: 2rem;
@@ -864,12 +758,6 @@ footer {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .fundadoras-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .fundadora-card img {
     width: 100%;
     aspect-ratio: 5 / 6;
@@ -929,13 +817,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
-}
-
-@media (min-width: 768px) {
-    .contacto-grid {
-        grid-template-columns: 2fr 1fr;
-        /* Formulario más ancho */
-    }
 }
 
 /* Formulario Minimalista */
@@ -1084,13 +965,6 @@ footer {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .team-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-    }
-}
-
 .team-card {
     text-align: center;
 }
@@ -1151,13 +1025,6 @@ footer {
     /* Móvil: 1 columna */
     gap: 4rem 2rem;
     /* Más espacio vertical (4rem) que horizontal */
-}
-
-@media (min-width: 768px) {
-    .proyectos-grid {
-        /* Clave del estilo Forma: 2 columnas fijas y grandes */
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 .proyecto-item {
@@ -1434,13 +1301,6 @@ footer {
     gap: 4rem;
 }
 
-@media (min-width: 900px) {
-    .servicios-detalle-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
-        gap: 2rem;
-    }
-}
-
 .servicio-card-clean {
     border-top: 1px solid rgba(0,0,0,0.1); /* Línea sutil arriba */
     padding-top: 1.5rem;
@@ -1501,9 +1361,468 @@ footer {
     color: #333;
 }
 
-/* Sección Llave en Mano */
+/* --- Home Page Specific Styles --- */
+
+/* Styles from former inline <style> tag */
+.section-tag {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 1rem;
+}
+.hero-bajada {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 2rem auto 0 auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Styles from former inline style attributes */
+.reveal {
+    padding: 4rem 2rem; 
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-weight: 300; 
+    font-size: 3rem; 
+    line-height: 1.1; 
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h1 strong {
+    font-weight: 600;
+}
+
+.hero-content .hero-bajada {
+    max-width: 650px; 
+    margin: 0 auto 2.5rem auto; 
+    font-size: 1.1rem; 
+    font-weight: 300; 
+    text-align: center;
+}
+
+.contacto-links {
+    display: flex; 
+    gap: 1.5rem; 
+    justify-content: center; 
+    margin-top: 3rem; 
+    flex-wrap: wrap;
+}
+
+#home-servicios {
+    padding: 4rem 2rem;
+}
+
+#home-servicios .servicios-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 4rem; 
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+#home-servicios .servicio-item {
+    border-top: 1px solid #333; 
+    padding-top: 1.5rem; 
+    text-align: left;
+}
+
+#home-servicios .servicio-item h3 {
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    font-weight: 400;
+}
+
+#home-servicios .servicio-item p {
+    margin-bottom: 1.5rem;
+}
+
+#home-servicios .servicio-item ul {
+    list-style: none; 
+    padding: 0; 
+    margin-bottom: 2rem; 
+    font-size: 0.9rem; 
+    line-height: 1.8;
+}
+
+#home-proyectos h2 {
+    margin-bottom: 3rem;
+}
+
+#home-about .about-texto h2 {
+    font-weight: 300; 
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+}
+
+#home-about .about-texto a {
+    margin-top: 2rem;
+}
+
+#home-contacto h2 {
+    font-weight: 300;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+    /* Hero */
+    .hero-linea {
+        font-size: clamp(2rem, 10vw, 4.5rem);
+    }
+
+    #blob-pink,
+    #arc-rainbow,
+    #ring-pink,
+    #cone-blue,
+    #petal-blue,
+    #circle-black,
+    #blob-orange {
+        display: none;
+    }
+
+    #orb-neutral {
+        width: 90vw;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+        z-index: 1;
+        bottom: auto;
+    }
+
+    /* Servicios */
+    #home-servicios .servicios-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Proyectos */
+    .proyectos-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    /* About */
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contacto */
+    #home-contacto .servicios-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Navegación */
+    nav ul {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (min-width: 768px) {
+    .servicios-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .hub-opciones {
+        grid-template-columns: 1fr 1fr;
+        height: 60vh;
+    }
+    .contenido-layout {
+        grid-template-columns: 1fr 3fr;
+    }
+    .ficha-tecnica {
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+    }
+    .fundadoras-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contacto-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    .proyectos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
     .layout-feature {
-        grid-template-columns: 2fr 1fr; /* Texto ancho, dato angosto */
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .servicios-detalle-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* --- About Page Specific Styles --- */
+.about-manifesto {
+    padding-bottom: 2rem;
+}
+
+.about-manifesto .lead {
+    font-weight: 400; 
+    font-size: 1.3rem; 
+    line-height: 1.8;
+}
+
+.filosofia-highlight {
+    background-color: #fdfbf5; 
+    padding: 4rem 2rem; 
+    text-align: center;
+}
+
+.filosofia-highlight div {
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.filosofia-highlight p {
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #555;
+}
+
+/* --- Proyectos Page Specific Styles --- */
+.proyectos-header {
+    text-align: center;
+    padding: 6rem 2rem 4rem 2rem;
+}
+
+.proyectos-header .pill-categoria {
+    display:inline-block;
+    border:1px solid #333;
+    padding:6px 20px;
+    border-radius:50px;
+    font-size:0.85rem;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    margin-bottom:1rem;
+}
+
+.proyectos-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.proyecto-item.hidden {
+    display: none;
+}
+
+.proyecto-item.visible {
+    display: block;
+    animation: fadeIn 0.5s ease forwards;
+}
+/* --- Servicios Comerciales Page Specific Styles --- */
+.hero-simple {
+    padding: 8rem 2rem 4rem 2rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-simple h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 300;
+    margin: 1.5rem 0 1rem 0;
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+
+.hero-simple h2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-simple p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.servicios-detalle-grid {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pagina-servicios-detalle section:last-of-type {
+    text-align: center;
+    padding-bottom: 6rem;
+}
+/* --- Servicios Page Specific Styles --- */
+#servicios-hub {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#servicios-hub .header-seccion {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#servicios-hub .header-seccion h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#servicios-hub .header-seccion p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
+/* --- NUEVA SECCIÓN: PROCESO VERTICAL (LISTA) --- */
+.seccion-proceso-vertical {
+    padding: 6rem 2rem;
+    background-color: #F9F8F6; /* Fondo sutil para diferenciar de la sección anterior */
+    margin-top: 2rem;
+}
+
+.proceso-container {
+    max-width: 900px; /* Más angosto para lectura tipo lista */
+    margin: 0 auto;
+}
+
+.proceso-header-vertical {
+    margin-bottom: 4rem;
+}
+
+.proceso-header-vertical h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.proceso-header-vertical p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Estilos de la Lista */
+.lista-pasos {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-paso {
+    display: grid;
+    grid-template-columns: 100px 1fr; /* Columna fija para número, resto para texto */
+    gap: 2rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid rgba(51, 51, 51, 0.2); /* Línea divisoria elegante */
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.item-paso:last-child {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.paso-numero {
+    font-size: 3rem;
+    font-weight: 300;
+    color: rgba(51, 51, 51, 0.2); /* Número sutil */
+    line-height: 0.8;
+    font-family: 'Manrope', sans-serif; /* O la fuente que uses para títulos */
+}
+
+.paso-info h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.paso-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+    max-width: 65ch; /* Ancho óptimo de lectura */
+}
+
+/* Efecto Hover */
+.item-paso:hover .paso-numero {
+    color: #333; /* El número se oscurece al pasar el mouse */
+    transform: translateX(5px);
+}
+
+.item-paso:hover {
+    padding-left: 10px; /* Sutil indentación */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .item-paso {
+        grid-template-columns: 1fr; /* En móvil, uno arriba del otro */
+        gap: 1rem;
+        padding: 2rem 0;
+    }
+    
+    .paso-numero {
+        font-size: 2.5rem;
     }
 }
